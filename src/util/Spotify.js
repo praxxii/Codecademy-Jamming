@@ -1,6 +1,7 @@
 const token = '';
 
-export default const Spotify = {
+const Spotify = {
 
 };
 
+export default Spotify;
