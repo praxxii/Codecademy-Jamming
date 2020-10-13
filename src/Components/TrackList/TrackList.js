@@ -1,8 +1,8 @@
 import React from 'react';
-// import Track from '../Track/Track';
-import './TrackList.css'
+import Track from '../Track/Track';
+import './TrackList.css';
 
-export default class TrackList extends React.Component {
+class TrackList extends React.Component {
     render() {
         return (
             <div className="TrackList">
@@ -12,11 +12,12 @@ export default class TrackList extends React.Component {
                                 key={track.id} 
                                 onAdd={this.props.onAdd}
                                 onRemove={this.props.onRemove}
-                                isRemoval={true}
-                                />
+                                isRemoval={this.props.isRemoval} />
                     })
-                    }
+                }
             </div>
         );
     }
 }
+
+export default TrackList;
