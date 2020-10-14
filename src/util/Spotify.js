@@ -1,5 +1,5 @@
 const clientId = 'f80bc3eacb6c4a32950f27f451d14f95';
-const redirectUri = 'kindly-plant.surge.sh';
+const redirectUri = 'http://localhost:3000/';
 let accessToken;
 
 const Spotify = {
